@@ -16,6 +16,111 @@ conditions (or cases) to choose from. For example, if we wanted to print
 someone’s horoscope, we could write twelve separate if/else statements (which
 would involve a lot of repetitive code) or we could use one switch statement
 with twelve cases.</p>
+<p></p>
+
+<p>Equals, Equals, Equals</p>
+<p><ul>
+  <li> = assigns value to a variable. For example, we might write int x; x = 5
+    which tells us that the integer x has been assigned the value of 5.</li>
+
+  <li> == is an operator that compares the locations (or references) of
+    objects </li>
+
+  <li> .equals is a method and it compares values of variables. The .equals
+    method can be used to compare Strings while the == operator cannot.</li>
+</ul>
+<p/>
+<p></p>
+<p>Casting</p>
+
+<p>“Casting a double to an int” refers to converting a number that includes a
+decimal (the double) into a whole number (integer).  In order to do this, we
+type “(int)” in front of the double that needs to be converted. The “(int)”
+rounds the double value down to the nearest integer. Another way to think about
+this is that the “(int)” strips away all the numbers to the right of the decimal
+point, leaving just the integer to the left. An example might look like this:</p>
+
+	<p>   System.out.println( (int)(7.97283)</p>
+
+<p>When run, this will return “7”.</p>
+
+<p>Casting a double to an int can be used to write a simulated a dice game. In such
+a program, we would use</p>
+
+<p>   Math.random()</p>
+
+<p>quite 1.0) . We then multiply that value by 6 which gives a random number
+between 0.0 and 5.9999999… .</p>
+
+<p>   ( Math.random() ) * 6</p>
+
+<p>Since a die only has possible whole number values of 1, 2, 3, 4, 5, and 6, we
+then need to cast the value to an integer.</p>
+
+<p>   (int) ( ( Math.random() ) * 6 )</p>
+
+<p>This step produces possible integers between 0 and 5. So next we add 1 to the
+formula to get our desired possible results of 1-6.</p>
+
+<p>   1 + (int) ( ( Math.random() ) * 6 )</p>
+
+
+<p></p>
+<h3>Loopy</h3>
+
+<p>In programming, loops execute repetitive tasks. The “for” loop, the “while”
+  loop, and the “do while” loop all function in slightly different ways.</p>
+
+<p>The “for loop:</p>
+
+<p>The “for” loop is used when you want a program to run a pre-determined number
+of times, while the “while” and “do while” loop are event driven. A “for” loop
+includes</p>
+  <ol>
+    <li>an initializer which tells the program when to start</li>
+    <li>a conditional which tells the program when to end</li>
+    <li>and an increment which tells the program how much to change by during each
+  iteration</li>
+  </ol>
+
+<p>An example of when to use a “for” loop would be if you wanted someone to do
+  something five times.</p>
+
+<p>The “while” and “do while” loops:</p>
+
+<p>In contrast to the count control aspect of the “for” loop, the “while” and
+  “do while” loops execute their programs for as long as their condition is
+  true. The key difference between these two event-driven loops is when the
+  condition is introduced.</p>
+
+<p>In the “while” loop, the condition is listed immediately. The computer checks
+  the condition and, if true, it runs the loop. If false, it leaves the loop and
+  moves on thru the code. Because of this format, the minimum number of times
+  that a “while” loop will execute is zero. One example of where we might use a
+  “while” loop would be in writing code for a point-accumulating dice game where
+  rolling a 1 ends your turn. If the player rolls a 1 on their first turn, the
+  while loop that adds points together doesn’t execute, no points are earned,
+  and the player’s turn is over.</p>
+
+<p>In the “do while” loop, the condition isn’t introduced until the end of the
+loop. This format ensures that the loop runs at least one time before looking
+to see if the condition is met. Printing a menu of options for a user to choose
+from (possibly repeatedly) is one example of when a do while loop is useful.</p>
+
+
+<p></p>
+<p>java.util.Scanner</p>
+
+<p>java.util.Scanner is a library reference. Scanner is a class that provides
+  the functionality of being able to take input from a user. This functionality
+  is located within the util (for utility) folder which is located within the
+  java folder.</p>
+
+<p>When you import java.util.Scanner, you are importing existing code into your
+  program. This particular code allows you to take inputs from the user into
+  your program.</p>
+<p></p>
+
 
 	<table>
     <tr>
@@ -47,6 +152,3 @@ with twelve cases.</p>
 
 </body>
 </html>
-=======
-Blogs
->>>>>>> 8f41cb4e56f745694bd9ece07535d38443bc6d0d
